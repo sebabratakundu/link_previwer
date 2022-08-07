@@ -1,0 +1,85 @@
+.google-card {
+	position: relative;
+	display: block;
+	box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+	margin: 0 -10px;
+	padding: 12px 16px;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 20px;
+	font-family: Arial, sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+.google-card__title {
+	display: block;
+	letter-spacing: normal;
+	color: #1a0dab;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.google-card__url {
+	display: block;
+	height: 17px;
+	white-space: nowrap;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 22px;
+	margin-bottom: 6px;
+}
+
+.google-card__title:hover {
+	text-decoration: underline;
+}
+
+.google-card__description {
+	color: #545454;
+	font-size: 13px;
+	line-height: 1.4;
+	word-wrap: break-word;
+}
+
+.google-card__url-title {
+	position: relative;
+	top: -2px;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: normal;
+	color: #006621;
+}
+
+.google-card__url-arrow {
+	display: none;
+	vertical-align: middle;
+	margin-top: -4px;
+	margin-left: 3px;
+	border-width: 5px 4px 0 4px;
+	border-style: solid;
+	border-color: #006621 transparent;
+}
+
+@media (min-width: 770px) {
+	.google-card {
+		width: 600px;
+		box-shadow: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.google-card__title {
+		font-size: 18px;
+		line-height: 1.2;
+	}
+
+	.google-card__url {
+		border: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.google-card__url-arrow {
+		display: inline-block;
+	}
+}

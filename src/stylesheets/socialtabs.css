@@ -1,0 +1,32 @@
+.nav-link, .nav-link:hover, .nav-link:focus, .nav-link.active {
+	border: none;
+	transition: none;
+}
+
+.nav-tabs .nav-link {
+	width: 50px;
+	height: 50px;
+	border: none;
+	color: #5A20CB;
+}
+
+.nav-link.active {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #FBDA61;
+	background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+	color: #ffffff !important;
+}
+
+.tab-content {
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+
+@media (min-width: 770px) {
+	.tab-content {
+
+	}
+}

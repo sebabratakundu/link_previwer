@@ -1,0 +1,9 @@
+#preview-area {
+	height: auto;
+}
+
+@media (min-width: 770px) {
+	#preview-area {
+		height: 500px;
+	}
+}

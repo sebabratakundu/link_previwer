@@ -1,0 +1,12 @@
+.footer-card {
+	height: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+@media (min-width: 770px) {
+	.footer-card {
+		height: 400px;
+	}
+}

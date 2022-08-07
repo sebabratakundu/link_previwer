@@ -1,0 +1,12 @@
+{
+	"NAME": "Social Previewer",
+	"HEADLINE": "Preview your social media share link",
+	"TAGLINE": "Make sure your website is ready to be shared on social media to optimize your conversion on Facebook,Twitter, LinkedIn & Pinterest",
+	"IMAGE_CDN_PROVIDER": "https://azookers.sirv.com",
+	"BANNER": "Link%20Previewer/link_previewer_banner.png",
+	"IMAGE_OPTIMIZER_URL": "https://cdn.statically.io",
+	"CARD_PLACEHOLDER_IMAGE_URL": "https://placehold.jp/500x261.png",
+	"DEFAULT_METADATA_URL": "https://www.findcoder.io/",
+	"COPY_WRITE": "Copywrite © 2022 Social Previewer | All rights reserved.",
+	"FOOTER_NOTE": "Preview your digital share with one click"
+}

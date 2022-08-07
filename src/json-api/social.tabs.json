@@ -1,0 +1,17 @@
+[
+	{
+		"id": 1,
+		"eventKey": "facebook",
+		"icon": "fa fa-facebook"
+	},
+	{
+		"id": 2,
+		"eventKey": "google",
+		"icon": "fa fa-google"
+	},
+	{
+		"id": 3,
+		"eventKey": "twitter",
+		"icon": "fa fa-twitter"
+	}
+]

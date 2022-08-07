@@ -1,0 +1,10 @@
+.hero-section {
+	min-height: 400px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.input-group-style input{
+	font-size: 13px;
+}
