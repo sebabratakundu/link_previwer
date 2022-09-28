@@ -4,6 +4,7 @@ import axios from "axios";
 import {toast} from "react-toastify";
 import PreviewArea from "../components/PreviewArea";
 import SITE from '../json-api/site.info.json';
+import DrawerWrapper from "../components/DrawerWrapper";
 
 axios.defaults.baseURL = process.env.REACT_APP_API_HOST;
 
@@ -62,6 +63,7 @@ const Home = () => {
 	return <>
 		<Hero input={input} setInput={setInput} getMetaData={getMetaData}/>
 		<PreviewArea previewError={previewError} previewState={ogState} metaData={metaData}/>
+		{ogState && <DrawerWrapper metaData={metaData} handleMetaData={setMetaData} />}
 	</>
 }
 

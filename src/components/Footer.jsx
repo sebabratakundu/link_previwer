@@ -5,7 +5,7 @@ import SITE from '../json-api/site.info.json';
 
 const Footer = () => {
 	return (
-		<Container fluid className="pt-0 pt-lg-3 mt-0 mt-lg-4">
+		<Container fluid className="pt-0 pt-lg-3">
 			<Row>
 				<Col md={2}></Col>
 				<Col md={8}>

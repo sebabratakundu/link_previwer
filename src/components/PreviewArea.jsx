@@ -7,7 +7,7 @@ import Error from "./Error";
 
 const PreviewArea = ({previewState, previewError, metaData}) => {
 	return (
-		<Container id="preview-area" className="py-5">
+		<Container id="preview-area" className="pt-5">
 			<Row>
 				<Col md={12}>
 					{
