@@ -1,9 +1,9 @@
-name: Link Preview App Deploy
+name: Link Previewer Deploy
 on:
   push:
     branches: [ master ]
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Copy Repo
@@ -16,10 +16,14 @@ jobs:
         run: npm i
       - name: Build app
         run: npm run build
+      - name: Set server API host name
+        run: |
+          touch .env
+          echo REACT_APP_API_HOST=${{secrets.API_HOST}} > .env
       - name: FTP Upload
-        uses: sebastianpopp/ftp-action@releases/v2
+        uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
-          host: ${{secrets.FTP_HOST}}
-          user: ${{secrets.FTP_UNAME}}
+          server: ${{secrets.FTP_HOST}}
+          username: ${{secrets.FTP_UNAME}}
           password: ${{ secrets.FTP_PASS }}
-          localDir: "build"
+          local-dir: ./build/
