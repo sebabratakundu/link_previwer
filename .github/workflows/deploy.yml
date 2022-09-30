@@ -22,4 +22,4 @@ jobs:
           host: ${{secrets.FTP_HOST}}
           user: ${{secrets.FTP_UNAME}}
           password: ${{ secrets.FTP_PASS }}
-          localDir: "dist"
+          localDir: "build"
