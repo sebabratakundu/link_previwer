@@ -1,5 +1,6 @@
 name: Link Previewer Deploy
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
 jobs:
