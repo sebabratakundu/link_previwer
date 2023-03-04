@@ -21,7 +21,13 @@ const SocialTabs = ({metaData}) => {
 						className=""
 						title={<IconButton classes={tab.icon} />}>
 						{
-							tab.eventKey === 'google' ? <GoogleCard metaData={metaData}/> : (tab.eventKey === 'facebook' ? <FacebookCard metaData={metaData}/> : <TwitterCard metaData={metaData}/>)
+							tab.eventKey === 'google' && <GoogleCard metaData={metaData}/>
+						}
+						{
+							tab.eventKey === 'facebook' && <FacebookCard metaData={metaData}/>
+						}
+						{
+							tab.eventKey === 'twitter' && <TwitterCard metaData={metaData}/>
 						}
 					</Tab>)
 				}
